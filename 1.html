@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Student Activity Portal</title>
+</head>
+<body>
+  <header>
+    <h1>Student Activity Portal</h1>
+    <nav aria-label="Main navigation">
+      <a href="#events">Events</a>
+      <a href="#register">Register</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="events">
+      <h2>Upcoming Events</h2>
+      <article>
+        <h3>Campus Welcome Social</h3>
+        <p>Meet students and explore campus activities.</p>
+      </article>
+      <aside>
+        <h3>Need help?</h3>
+        <p>Contact the student activities team.</p>
+      </aside>
+    </section>
+
+    <section id="register">
+      <h2>Register for an Event</h2>
+      <form>
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" required>
+
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" required>
+
+        <label for="year">Year of study</label>
+        <select id="year" name="year">
+          <option>First year</option>
+          <option>Second year</option>
+          <option>Third year</option>
+        </select>
+
+        <fieldset>
+          <legend>Event</legend>
+          <input id="social" name="event" type="radio" value="social">
+          <label for="social">Welcome Social</label>
+          <input id="sports" name="event" type="radio" value="sports">
+          <label for="sports">Sports Day</label>
+        </fieldset>
+
+        <input id="updates" name="updates" type="checkbox">
+        <label for="updates">Email me about future events</label>
+
+        <label for="notes">Additional notes</label>
+        <textarea id="notes" name="notes"></textarea>
+
+        <button type="submit">Register</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Student Activity Portal</p>
+  </footer>
+</body>
+</html>
