@@ -1,0 +1,27 @@
+<html>
+    <head>
+          </head>
+        <body>
+            <h2>addition of two numbers</h2>
+            <input type="number" id="num1" placeholder="Enter the first number"/><br><br>
+            <input type="number" id="num2" placeholder="Enter the second number"/><br><br>
+            <button onclick="addNumbers()">Add</button>
+            <button onclick="subNumbers()">Sub</button>
+            <h3 id="result"></h3>
+            <script>
+                function addNumbers(){
+                    let a= Number(document.getElementById("num1").value);
+                    let b= Number(document.getElementById("num2").value);
+                    let sum=a+b;
+                    document.getElementById("result").innerHTML="Addition= "+sum;
+                }
+                function subNumbers(){
+                    let a= Number(document.getElementById("num1").value);
+                    let b= Number(document.getElementById("num2").value);
+                    let sub=a-b;
+                    document.getElementById("result").innerHTML="Subtraction= "+sub;   
+                }
+            </script>
+        </body>
+  
+</html>

@@ -1,29 +1,59 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NETRA-Mission Control</title>
+    <link rel="stylesheet" type="text/css" href="netra.css">
+</head>
 <body>
-    <link rel="stylesheet" href="project_1.css">
-<header class="navbar">
-<!-- Left Section:Logo and Branding-->
- <div class="brand-section">
-    <div class="Logo">N</div>
-    <h1 class="brand-name">NETRA</h1>
- </div>
+    <header class="navbar">
+<!--Left Section:logo and Branding-->
+        <div class="brand-section">
+            <div class="logo">N</div>
+                <h1 class="brand-name">NETRA</h1>
+            </div>
+        </div>
+        <!--Middle Section: Title and Subtitle-->
+        <div class="title-section">
+            <h2>-Mission Control</h2>
+            <p>Smart Rover Fleet.Inteligent Campus</p>
+        </div>
+        <!--Right Section:Status and Button-->
+        <div class="live-section">
+            <span class="status-dot"></span>
+           <span >Live- Simulated Telemetry</span>
+        </div>
+        <button class=" dispatch-btn">Dispatch Mission</button>
+    </header>
+    <main class="page">
+    <section class="kpi-grid">
+        <article class="kpi-card">
+            <span>ROVERS ONLINE</span>
+            <h2 id="online-count">6 / 6</h2>
+            <p>Active rover units</p>
+            </article>
 
- <!-- middle  Section:title and subtitle-->
-  <div class="title-section">
-    <h2>-Mission Control</h2>
-    <p> Smart Rover Fleet. Intelligent Campus.</p>
-  </div>
+            <article class="kpi-card">
+             <span>AVERAGE BATTERY</span>
+            <h2 id="average-battery">76%</h2>
+            <p>Fleet battery level</p>
+            </article>
 
-  <!-- Right Section:sttus  and button-->
-   <div class="right-section">
-    <div class="status">
-        <span class="status-dot">&#183</span>
-        <span>Live - Simulated Telemetry</span>
-    </div>
-    <button class="dispatch-btn">
-        Dispatch Mission
-    </button>
-   </div>
-</header>
- </body>
- </html>
+            <article class="kpi-card">
+             <span>OPEN ALERTS</span>
+            <h2 id="open-alerts">0</h2>
+            <p>Active alerts and warnings</p>
+            </article>
+
+            <article class="kpi-card">
+             <span>DISTANCE TODAY</span>
+            <h2 id="distance">13.6km</h2>
+            <p>Total simulated distance</p>
+        </article>
+
+    </section>
+    </main>
+    
+    </body>
+</html>

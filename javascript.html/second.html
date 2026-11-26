@@ -1,0 +1,17 @@
+<html>
+    <title>brand-name</title>
+    <head>
+        <body>
+            <h2> enter your name</h2>
+            <input type="text" id="username" placeholder="enter your name"/>
+            <button onclick="greet()">submit</button>
+                <h3 id="result" style="color: blue"></h3>
+                <script>
+                    function greet(){
+                        let name=document.getElementById("username").value;
+                        document.getElementById("result").innerHTML="Hello "+name+" Welcome!";
+                    }
+                </script>
+        </body>
+    </head>
+</html>
